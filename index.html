@@ -480,7 +480,7 @@ pk.querySelector('.pk-list').innerHTML=USERS.map((n,i)=>`<button class="pk-b" da
 function showMe(){const b=$('#me');b.hidden=!me;b.textContent=me?me+' · Log out':''}
 function openPick(){pkList();$('#pkmsg').textContent='';pk.hidden=false;document.body.style.overflow='hidden';const f=pk.querySelector('.pk-b');if(f)f.focus()}
 function closePick(){pk.hidden=true;document.body.style.overflow=panelOpen?'hidden':''}
-const APPS_URL='PASTE_ALAMAT_APPS_SCRIPT_DI_SINI';
+const APPS_URL='https://script.google.com/macros/s/AKfycbwYG4cThad3cPhvgDlfrvX0sVxLYNXjMLzEpS8KtpyaUGkrOX12wGQh0FKUMOymz1_U/exec';
 const hasApps=()=>/^https:\/\//.test(APPS_URL);
 function mkShim(){return{callTool:async(srv,name,args)=>{
   let r,j;
